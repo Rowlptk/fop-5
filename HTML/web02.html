@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web page layout</title>
+    <style>
+        header{
+            background-color: pink;
+            color : chocolate;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        aside{
+            width: 29%;
+            border: 1px solid red;
+            float: right;
+            margin-top: 5px;
+            padding:5px;
+            background-color: pink;
+            color:chocolate;
+        }
+        aside nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        aside nav ul li a{
+            text-decoration: none;
+            color:chocolate;
+        }
+        aside nav ul li a:hover{
+            color:black;
+        }
+        main{
+            width: 68%;
+            border: 1px solid red;
+            margin-top: 5px;
+            padding:5px;
+            background-image: url('/images/paper.jpg');
+        }
+
+        footer{
+            background-color: pink;
+            padding: 10px;
+            border: 1px solid red;
+            margin-top: 5px;
+            text-align: center;
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1>Mero Website</h1>
+        <p>This is a simple layout of a web page</p>
+    </header>
+
+    <!-- sidebar -->
+    <aside>
+        <h2>Navigation</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h3>Contact Us</h3>
+        <p><strong>Address : </strong> New Baneswor,Kathmandu</p>
+        <p><strong>Phone : </strong> +977 9801200111</p>
+        <p><strong>Email : </strong> info@neosphere.com.np </p>
+    </aside>
+
+    <!-- body -->
+    <main>
+        <section id="sec1">
+            <h2>Section one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora a libero voluptatum minima repellat autem, maiores ea quibusdam placeat dolores! Minima natus voluptate quaerat officia earum molestiae quam quae rem?
+            </p>
+        </section>
+        <section id="sec2">
+            <h2>Section two</h2>
+            <article>
+                <h3>article one</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate libero ratione quaerat labore dolorum reiciendis, asperiores odio quod possimus velit perferendis dolore corporis excepturi atque dicta quidem voluptatum! Molestiae, porro?</p>
+            </article>
+            <article>
+                <h3>article two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate libero ratione quaerat labore dolorum reiciendis, asperiores odio quod possimus velit perferendis dolore corporis excepturi atque dicta quidem voluptatum! Molestiae, porro?</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>Copyright &copy; 2020</p>
+    </footer>
+</body>
+</html>
