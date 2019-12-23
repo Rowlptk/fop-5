@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background: #333;
+        }
+        .box {
+            color :white;
+            background: white;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: animate2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            animation-delay: 2s;
+        }
+        @keyframes animate2{
+            0% {
+                left: 0px;
+                top: 0px;
+                background-color: white;
+                border-radius: 0 0 0 0;
+            }
+            25% {
+                left: 300px;
+                top: 0px;
+                background-color: red;
+                border-radius: 50% 0 0 0;
+            }
+            50% {
+                left: 300px;
+                top: 300px;
+                background-color: green;
+                border-radius: 50% 50% 0 0;
+            }
+            75% {
+                left: 0px;
+                top: 300px;
+                background-color: blue;
+                border-radius: 50% 50% 50% 0;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+                background-color: white;
+                border-radius: 50% 50% 50% 50%;
+            }
+        }
+        /* flex, grids, tranform, units vh,vw,rem,em,%, precedens */
+        @keyframes animate1 {
+            from {
+                top : 0;
+            }
+
+            to {
+                width: 600px;
+                background-color: red;
+                top: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Ram</div>
+</body>
+</html>
+
+js
