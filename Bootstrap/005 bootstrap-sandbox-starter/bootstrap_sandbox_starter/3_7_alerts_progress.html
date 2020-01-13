@@ -89,7 +89,7 @@
         <!--####################START HERE######################-->
 
         <!-- ALERTS -->
-        <div>
+        <div class="alert alert-primary">
             <strong>Primary</strong> Blog post added
         </div>
 
@@ -123,16 +123,16 @@
 
 
         <!-- DISMISSABLE ALERT -->
-        <div>
-            <button type="button">
+        <div class="alert alert-success alert-dismissable">
+            <button class="close" type="button" data-dismiss="alert">
                 <span>&times;</span>
             </button>
             <strong>Dismissable</strong> Blog post added
         </div>
 
         <!-- EXTRA CONTENT -->
-        <div>
-            <h4>Congrats!</h4>
+        <div class="alert alert-success">
+            <h4 class="alert-heading">Congrats!</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos eius, sit quo assumenda totam commodi
                 ipsum saepe molestias eligendi exercitationem repudiandae qui facilis deserunt non, harum ab quam? Cumque</p>
             <hr>
@@ -143,8 +143,15 @@
         <br>
 
         <!-- PROGRESS BARS -->
-        <div>
-            <div></div>
+        <div class="progress">
+            <div class="progress-bar bg-success progress-bar-striped
+            progress-bar-animated" style="width:57%;">
+                57%
+            </div>
+            <div class="progress-bar bg-danger progress-bar-striped
+            progress-bar-animated" style="width:10%;">
+                10%
+            </div>
         </div>
         <br>
         <div>
