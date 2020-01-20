@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    <button id = "b1">fadeIn</button>
+    <button id = "b2">fadeOut</button>
+    <button id = "b3">fadeToggle</button>
+    <button id = "b4">fadeTo</button>
+
+    <br><br>
+    <div id="div" style="background-color: #333; color: white; padding: 10px">Slide</div>
+    <div id="panel" style="border: 2px solid black; display:none; background-color: red;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem explicabo repellat laborum atque ab distinctio. Eos, ipsa deserunt, veniam fuga omnis quas maiores reiciendis necessitatibus ipsum in aut laborum maxime.</p>
+    </div>
+
+    <!-- hide, show, toggle, animate, Angularjs(SPA) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // Fade effects ==> fadeIn, fadeOut, fadeToggle, fadeTo
+        $(document).ready(function(){
+           /* $('#div').click(function(){
+                $('#panel').slideDown(2000);
+            })
+            $('#div').dblclick(function(){
+                $('#panel').slideUp(2000);
+            })*/
+            $('#div').click(function(){
+                $('#panel').slideToggle(1000);
+            })
+
+            $('#b1').click(function(){
+                $('#panel').fadeIn(5000);
+            })
+            $('#b2').click(function(){
+                $('#panel').fadeOut(5000);
+            })
+            $('#b3').click(function(){
+                $('#panel').fadeToggle(3000);
+            })
+            $('#b4').click(function(){
+                $('#panel').fadeTo(3000, 0.2);
+            })
+
+        })
+    </script>
+</body>
+</html>
