@@ -1,0 +1,9 @@
+8:00 9:30  ==>STT js
+
+5:00 6: 30 ==>MWF Js
+
+11:30 to 1:00 ==>STT CSS end
+
+8:00 to 9: 30 ==>MWF nested if 
+
+3:00 to 4:30 ==>STT Functions
