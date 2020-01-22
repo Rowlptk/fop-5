@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular JS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<!-- filters in Angularjs , case, date, currency, search-->
+<body ng-app ="myApp">
+    <div ng-controller = "myCtrl">
+        <h1>{{str}}</h1>
+        <h1>{{str | uppercase}}</h1>
+        <h1>{{str | lowercase}}</h1>
+
+        <h1>{{money | currency}}</h1>
+        <h1>{{money*114.05 | currency:'Nrs'}}</h1>
+        <h1>{{money*0.77 | currency:'&pound;'}}</h1>
+
+        <h1>{{ today | date }}</h1>
+        <h1>{{ today | date:'y-MM-d' }}</h1>
+        <h1>{{ today | date:'shortDate' }}</h1>
+
+        <input type="text" ng-model="search">
+        <ul>
+            <li ng-repeat="item in animals | filter:search">{{item}}</li>
+        </ul>
+
+    </div>
+    <script>
+        var app = angular.module('myApp',[]);
+        app.controller('myCtrl',function($scope){
+            $scope.str = 'Hello';
+            $scope.money = 100;
+            $scope.today = new Date();
+            $scope.animals = ['monkey', 'leopard', 'elephant', 'lion', 'tiger', 'buffalo', 'dog', 'cat', 'cow', 'giraffe','zebra'];
+        })
+    </script>
+
+    css classess, validity, form validation, angular routing ==> intro to sql ==> commands ==> database language
+    5th day ==> exam
+    html,css ==>  3 page ==> responsive, bootstrap ==> looplab ==> 3 days
+
+</body>
+</html>

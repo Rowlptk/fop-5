@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular JS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<!-- ng-app, ng-controller, ng-bind, ng-include, ng-repeat, ng-init  -->
+<body ng-app = "myApp" ng-controller="myCtrl">
+    <input type="text" ng-model="demo" placeholder="Write something...">
+    <h1 ng-bind="demo"></h1>
+    <p>Hello {{demo}}</p>
+   
+    <hr>
+    
+    <div ng-include="'welcome.html'" style="border:1px solid red;">
+    </div>
+
+    <hr>
+    <ul>
+        <li ng-repeat="item in fruits">{{item}}</li>
+    </ul>
+
+    <hr>
+    <input type="text" ng-model="firstName" ng-init="firstName='Ravan'">
+
+
+    <script>
+       var app = angular.module('myApp',[]);
+       app.controller('myCtrl', function($scope){
+           $scope.demo = "Apple";
+           $scope.fruits = ['apple','mango','grapes', 'strawberry', 'orange', 'banana', 'papaya'];
+       })
+    </script>
+</body>
+</html>

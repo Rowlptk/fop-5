@@ -1,0 +1,17 @@
+AngularJS ==> Framework
+
+Short codes ==> MVC pattern
+
+M ==> model  ==> data
+V ==> view ==> presentation layer
+C ==>  Controller ==> data control on view
+
+
+$,
+
+ng- ==> directives ==> App
+
+SPA ==> Single web Application
+
+Home About Services
+
