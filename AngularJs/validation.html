@@ -1,0 +1,52 @@
+<!-- $valid ==> validity -->
+<!-- $invalid ==> invalidity -->
+<!-- $dirty ==> dirtiness -->
+<!-- $prisitine ==> not dirty -->
+<!-- $touched ==> $untouched -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular JS Validation</title>
+    <style>
+        #input1.ng-valid {
+            background-color: green;
+        }
+        #input2.ng-invalid {
+            background-color: red;
+        }
+        #input3.ng-dirty {
+            background-color: gray;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-app ="">
+    <form action="#" novalidate name="myForm">
+        <input type="text" id="input1" ng-model="input1" name="myInput1" required placeholder="valid">
+        <span>{{ myForm.myInput1.$valid }}</span>
+        <br>
+        <input type="text" id="input2" ng-model="input2" name="myInput2" required placeholder="invalid">
+        <span>{{ myForm.myInput2.$invalid }}</span>
+        <br>
+        <input type="text" id="input3" ng-model="input3" name="myInput3" required placeholder="dirty">
+        <span>{{ myForm.myInput3.$dirty }}</span>
+        <br>
+        <input type="text" id="input4" ng-model="input4" name="myInput4" required placeholder="pristine">
+        <span>{{ myForm.myInput4.$pristine }}</span>
+        <br>
+        <input type="text" id="input5" ng-model="input5" name="myInput5" required placeholder="touched">
+        <span>{{ myForm.myInput5.$touched }}</span>
+        <br>
+        <input type="text" id="input6" ng-model="input6" name="myInput6" required placeholder="untouched">
+        <span>{{ myForm.myInput6.$untouched }}</span>
+        <br>
+        <input type="submit"  value="Check">
+    </form>
+    <!-- .ng-valid, .ng-invalid, .ng-dirty, .ng-pristine, .ng-touched, .ng-untouched -->
+</body>
+</html>

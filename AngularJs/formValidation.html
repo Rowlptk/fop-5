@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+    <style>
+        span {
+            color: red;
+            font-size: 11px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <form name="myForm" novalidate>
+        <div>
+            <label for="name">Name : </label>
+            <br>
+            <input type="text" ng-model="myUsr" name="myUsr" id="name" required>
+            <span ng-show="myForm.myUsr.$dirty && myForm.myUsr.$error.required">Name is required <sup>*</sup></span>
+        </div>
+        <div>
+            <label for="email">Email : </label>
+            <br>
+            <input type="email" ng-model="myEmail" name="myEmail" id="email" required>
+            <span ng-show="myForm.myEmail.$dirty && myForm.myEmail.$invalid">
+                <span ng-show = "myForm.myEmail.$error.required">Email is required <sup>*</sup></span>
+                <span ng-show = "myForm.myEmail.$error.email">Email is invalid <sup>*</sup></span>
+            </span>
+            <br><br>
+            <input type="submit" value="click" ng-disabled="myForm.$invalid">
+        </div>
+    </form>
+</body>
+</html>
